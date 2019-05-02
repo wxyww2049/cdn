@@ -5,4 +5,4 @@
 调用地址为:
 https://cdn.jsdelivr.net/gh/wxyww2049/cdn@版本号/文件路径
 
-如:https://cdn.jsdelivr.net/gh/wxyww2049/cdn@1.0/img/1.png
+如:https://cdn.jsdelivr.net/gh/wxyww2049/cdn@1.1/img/1.png
