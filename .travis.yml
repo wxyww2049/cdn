@@ -14,4 +14,6 @@ before_script:
 script:
 - git push -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git :refs/tags/now 
 - git push -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git now
+- git add .
+- git commit -m -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git HEAD:master
 - git push -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git HEAD:master
