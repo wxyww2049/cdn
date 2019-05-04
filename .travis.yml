@@ -12,8 +12,5 @@ before_script:
 - git config --global user.email "2049500915@qq.com"
 
 script:
-- git push -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git :refs/tags/now 
-- git push -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git now
-- git add .
-- git commit -m -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git
+- git push -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git `npm version patch -m "%s [ci skip]"`
 - git push -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git HEAD:master
