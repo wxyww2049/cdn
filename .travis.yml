@@ -14,4 +14,5 @@ before_script:
 script:
 - git push -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git :refs/tags/now 
 - git push -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git now
+- git push -f https://$GITHUB_KEY@github.com/$TRAVIS_REPO_SLUG.git `npm version patch -m "%s [ci skip]"`
 - git push -f https://$CI_TOKEN@github.com/wxyww2049/cdn.git HEAD:master
